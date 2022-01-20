@@ -1,3 +1,133 @@
-body {
-    background-color: green;
+.home-page {
+    header {
+        background: url(../img/slide1-01.jpg) center/cover;
+    }
+    .header {
+        max-width: 100%;
+        height: 100%;
+        position: relative;
+        .header-int {
+            max-width: 100vw;
+            height: 100vh;
+            border-top: 5px solid $red;
+            .nav-bar {
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 50px;
+                .navigation {
+                    a {
+                        transition: all 0.5s ease-out;
+                        padding:0 30px;
+                    }
+                }
+                .icone {
+                    width:10%;
+                    display: flex;
+                    justify-content: center;
+                    transition: all 0.5s ease-out;
+                    a { 
+                        padding:0 10px;
+                    }
+                }
+                .logo {
+                    width:10%;
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        height: 100%;
+                    }
+                }
+                
+            }
+            .title {
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .btn-white {
+                border-radius: 10px;
+                background-color: white;
+                position: absolute;
+                height:40px;
+                width:135px;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.5s ease-out;
+            }
+            .btn-white:hover {
+                background-color: $red;
+            }
+        }
+    }
+    .welcome {
+        background-image: url(../img/pattern1.png);
+        background-repeat: repeat;
+        padding-bottom:105px;
+        padding-top: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .container {
+            max-width:1200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .italian {
+                width:50%;
+                padding: 0 30px;
+                text-align: center;
+                h4 {
+                    margin:10px 0 20px;
+                }
+                p {
+                    margin-bottom: 30px;
+                }
+                a {
+                    transition: all 0.5s ease-out;
+                }
+            }
+            .image {
+                width:50%;
+                justify-content: center;
+                display: flex;
+                .border {
+                    width:65%;
+                    text-align: center;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    img {
+                        max-width:100%; 
+                        vertical-align: middle;               
+                    }
+                }            
+            }
+        } 
+    }
+    .discover {
+        background: url(../img/bg-intro-01.jpg);
+        background-position: center 97.3333px;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        padding-bottom: 158px;
+        padding-top: 135px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .learn-more {
+        background-color: white;
+        padding-bottom: 133px;
+        padding-top: 77px;
+    }
 }
+
