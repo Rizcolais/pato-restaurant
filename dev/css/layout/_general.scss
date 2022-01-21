@@ -1,4 +1,4 @@
-/********************** typography **********************/
+/********************************* typography *******************************/
 
 /* général */ 
 
@@ -15,7 +15,6 @@ h1 {
     text-align: center;
     font-family: $courgette;
     margin:0 0 15px;
-    color:white;
     margin:0;
     font-weight: 400;
 }
@@ -26,7 +25,6 @@ h2 {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 10px;
-    color:white;
     margin:10px 0 0;
 }
 
@@ -35,7 +33,6 @@ h3 {
     font-family: $courgette;
     font-size: 30px;
     line-height: 1.2;
-    color:$red;
     font-weight: 400;
 }
 
@@ -43,8 +40,7 @@ h4 {
     font-family: $poppins;
     font-weight: 700;
     line-height: 1.2;
-    color: $black001;
-    letter-spacing: 6px;
+    letter-spacing: 10px;
     text-transform: uppercase;
     font-size: 50px;
     margin:0
@@ -54,11 +50,53 @@ h5 {
     font-family: $poppins;
     font-weight: 700;
     line-height: 1.2;
-    color: white;
     letter-spacing: 6px;
+    word-spacing: 6px;
     text-transform: uppercase;
     font-size: 50px;
     margin:0
+}
+
+h6 {
+    font-family: $poppins;
+    font-weight: 500;
+    font-size: 22px;
+    color: $black002;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin:0;
+}
+
+.title7 {
+    font-family: $poppins;
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin:0;
+}
+
+.number {
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 50px;
+    color: $red;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.1;
+    margin:0;
+}
+
+.form-txt {
+    font-family: $montserrat;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.calendrier {
+    font-family: $montserrat;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 p {
@@ -66,19 +104,10 @@ p {
     font-weight: 400;
     font-size: 15px;
     line-height: 1.7;
-    color: $gray;
     margin:0; 
 }
 
 /* spécifique */
-
-.nav-bar a, .btn-white, .btn-white:hover a {
-    color:white;
-}
-
-.nav-bar a:hover, .italian a:hover {
-    color:$red;
-}
 
 .nav-bar a {
     font-size: 15px;
@@ -86,15 +115,275 @@ p {
 
 .btn-white a {
     line-height: 1.1;
-    color: $red;
     font-size: 12px;
     text-decoration: none;
 }
 
-.italian a {
+.bg-event .wrapper-border a, .txt-verticale span, .mots, .italian a, .wrapper-txt a{
+    font-family: $montserrat;
     font-size: 12px;
-    color: $black001;
-    text-transform: uppercase;
+    font-weight: 700;
     letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/******************************* couleur *******************************/
+
+/* color */
+
+.nav-bar a, .btn-white, .btn-white:hover a, .btn-2:hover h6, .txt-verticale, h5,  .btn-black, .txt-verticale span, .btn-black, h1, h2 {
+    color:white;
+}
+
+.italian a, .wrapper-txt a, h4, .title7 {
+    color: $black001;
+}
+
+p, .calendrier {
+    color: $gray;
+}
+
+.mots, .bg-event .wrapper-border a {
+    color: $gray001;
+}
+
+.form-txt {
+    color: $gray002;
+}
+
+.nav-bar a:hover, .italian a:hover, a h6:hover, .wrapper-txt a:hover, .bg-event .wrapper-border a:hover, .btn-white a, h3 {
+    color:$red;
+}
+
+/* background color */ 
+
+.btn-2, .learn-more, .block-events .block-right .bg-event .wrapper-border, .btn-white {
+    background-color: white;
+} 
+
+.btn-2:hover, .txt-verticale, .btn-black:hover, .btn-white:hover {
+    background-color: $red;
+}
+
+.btn-black {
+    background-color: $black003;
+}
+
+/******************************* wrapper *******************************/
+
+.container {
+    max-width:1200px;
+    @include flex-center;
+}
+
+.wrapper-title {
+    @include flex-center;
+    flex-direction: column;
+}
+
+.container-grid {
+    max-width:1200px;
+    @include grid;
+}
+
+.wrapper-border {
+    text-align: center;
+        overflow: hidden;
+        display: block;
+        border-radius: 10px;
+        position: relative;
+        img {
+            width:100%; 
+            vertical-align: middle;       
+            border-style: none;        
+        }
+}       
+
+.wrap-input {
+    border: 2px solid $gray003;
+    border-radius: 10px;
+    position: relative;
+}
+
+/******************************* bouton *******************************/
+
+.btn-white {
+    border-radius: 10px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include flex-center;
+    transition: all 0.5s ease-out;
+}
+
+.btn-2 {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    opacity: 0.9;
+    @include flex-center;
+} 
+
+.btn-calendar {
+    position: absolute;
+    right: 0px;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.btn-black {
+    border-radius: 10px;
+}
+
+/******************************* margin/padding *******************************/
+
+/* padding */ 
+
+.p-t-b-30 {
+    padding:0 30px;
+}
+
+.p-t-b-10 {
+    padding:0 10px;
+}
+
+.p-t-30 {
+    padding-top: 30px;
+}
+
+.p-t-35 {
+    padding-top: 35px;
+}
+
+.p-t-40 {
+    padding-top: 40px;
+}
+
+
+.p-t-45 {
+    padding-top: 45px;
+}
+
+.p-t-50 {
+    padding-top: 50px;
+}
+
+.p-t-115 {
+    padding-top:  115px;
+}
+
+.p-t-120 {
+    padding-top: 120px;
+}
+
+.p-t-135 {
+    padding-top: 135px;
+}
+
+.p-b-30 {
+    padding-bottom:30px;
+} 
+
+.p-b-105 {
+    padding-bottom:105px;
+} 
+
+.p-b-120 {
+    padding-bottom: 120px;
+}
+
+.p-b-158 {
+    padding-bottom: 158px;
+} 
+
+.p-b-208 {
+    padding-bottom: 158px;
+} 
+
+/* margin */ 
+
+.m-b-2 {
+    margin-bottom: 2px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.m-b-13 {
+    margin-bottom: 13px;
+}
+
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
+.m-b-30 {
+    margin-bottom: 30px;
+}
+
+.m-b-52 {
+    margin-bottom: 52px;
+}
+
+.m-t-5 {
     margin-top: 5px;
+}
+
+.m-t-10 {
+    margin-top: 10px;
+}
+
+.m-t-30 {
+    margin-top: 30px;
+}
+
+.m-t-40 {
+    margin-top: 40px;
+}
+
+/********************************** size *********************************/
+
+.size1 {
+    width:173px;
+    height:60px;
+}
+
+.size2 {
+    width:225px;
+    height:60px;
+}
+
+.size3 {
+    height:40px;
+    width:135px;
+}
+
+.size4 {
+    width: 390px;
+    height: 50px;
+}
+
+.size5 {
+    width: 100%;
+    height: 50px;
+}
+
+.size6 {
+    width:80px;
+}
+
+.size7 {
+    width:150px;
+    height:40px;
+}
+
+
+/******************************* transition *******************************/
+
+.transition {
+    transition: all 0.5s ease-out;
 }
