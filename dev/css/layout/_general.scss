@@ -9,23 +9,98 @@ a {
     font-weight: 400;
 }
 
-h1 {
-    font-size: 60px;
-    line-height: 1.1;
-    text-align: center;
-    font-family: $courgette;
-    margin:0 0 15px;
-    margin:0;
+.small-date {
+    font-family: $montserrat;
+    font-size: 12px;
     font-weight: 400;
 }
 
-h2 {
-    font-size: 90px;
-    font-family: $poppins;
+.Marie-NY, .btn-black2 {
+    font-family: $montserrat;
+    font-size: 12px;
+    font-weight: 400;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+.btn-white a, .btn-black a {
+    line-height: 1.1;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.bg-event .wrapper-border a, .txt-verticale span, .mots, .story, .wrapper-txt a{
+    font-family: $montserrat;
+    font-size: 12px;
     font-weight: 700;
-    letter-spacing: 10px;
-    margin:10px 0 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.text-inside, .text-inside a, .text-mapping {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.7;
+    text-transform: none;
+}
+
+.calendrier {
+    font-family: $montserrat;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.text-foot {
+    font-family: $noto;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.nav-bar a {
+    font-size: 15px;
+}
+
+.form-txt {
+    font-family: $montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: initial;
+}
+
+p {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    margin:0; 
+}
+
+.text-avis {
+    font-family: $montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.title-footer {
+    font-family: $poppins;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h6, .title7, .title-contact, .title-map-info {
+    font-family: $poppins;
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin:0;
 }
 
 h3 {
@@ -35,6 +110,7 @@ h3 {
     line-height: 1.2;
     font-weight: 400;
 }
+
 
 h4 {
     font-family: $poppins;
@@ -57,25 +133,6 @@ h5 {
     margin:0
 }
 
-h6 {
-    font-family: $poppins;
-    font-weight: 500;
-    font-size: 22px;
-    color: $black002;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin:0;
-}
-
-.title7 {
-    font-family: $poppins;
-    font-weight: 500;
-    font-size: 22px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin:0;
-}
-
 .number {
     font-family: $montserrat;
     font-weight: 700;
@@ -87,85 +144,76 @@ h6 {
     margin:0;
 }
 
-.form-txt {
-    font-family: $montserrat;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-.calendrier {
-    font-family: $montserrat;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-p {
-    font-family: $montserrat;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 1.7;
-    margin:0; 
-}
-
-/* spécifique */
-
-.nav-bar a {
-    font-size: 15px;
-}
-
-.btn-white a {
+h1 {
+    font-size: 60px;
     line-height: 1.1;
-    font-size: 12px;
-    text-decoration: none;
+    text-align: center;
+    font-family: $courgette;
+    margin:0 0 15px;
+    margin:0;
+    font-weight: 400;
 }
 
-.bg-event .wrapper-border a, .txt-verticale span, .mots, .italian a, .wrapper-txt a{
-    font-family: $montserrat;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1px;
+h2 {
+    font-size: 90px;
+    font-family: $poppins;
     text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin:10px 0 0;
 }
 
 /******************************* couleur *******************************/
 
 /* color */
 
-.nav-bar a, .btn-white, .btn-white:hover a, .btn-2:hover h6, .txt-verticale, h5,  .btn-black, .txt-verticale span, .btn-black, h1, h2 {
+.nav-bar a, .btn-white, .btn-white:hover a, .btn-2:hover h6, .txt-verticale, h5, .txt-verticale span, h1, h2, .btn-black a, .btn-black2 a, .foot-icone a, .title-footer {
     color:white;
 }
 
-.italian a, .wrapper-txt a, h4, .title7 {
+.story, .wrapper-txt a, h4, .title7, .Marie-NY {
     color: $black001;
 }
 
-p, .calendrier {
+h6, .title-map-info {
+    color: $black002;
+}
+
+p, .calendrier, .text-avis, .btn-calendar, .text-mapping {
     color: $gray;
 }
 
-.mots, .bg-event .wrapper-border a {
+.mots, .bg-event .wrapper-border a, .text-foot, .text-inside {
     color: $gray001;
 }
 
-.form-txt {
+.form-txt, .small-date {
     color: $gray002;
 }
 
-.nav-bar a:hover, .italian a:hover, a h6:hover, .wrapper-txt a:hover, .bg-event .wrapper-border a:hover, .btn-white a, h3 {
+.nav-bar a:hover, .story:hover, a h6:hover, .wrapper-txt a:hover, .bg-event .wrapper-border a:hover, .btn-white a, h3, .les-etoiles, .foot-icone a:hover, .text-inside a {
     color:$red;
 }
 
 /* background color */ 
 
-.btn-2, .learn-more, .block-events .block-right .bg-event .wrapper-border, .btn-white {
+.btn-2, .learn-more, .block-events .block-right .bg-event .wrapper-border, .btn-white, .play {
     background-color: white;
 } 
 
-.btn-2:hover, .txt-verticale, .btn-black:hover, .btn-white:hover {
+.btn-2:hover, .txt-verticale, .btn-black:hover, .btn-white:hover, .btn-black2:hover {
     background-color: $red;
 }
 
-.btn-black {
+.btn-black2 {
+    background-color: $black001;
+}
+
+.footer {
+    background-color: $black002;
+}
+
+.btn-black, .footer2 {
     background-color: $black003;
 }
 
@@ -188,21 +236,25 @@ p, .calendrier {
 
 .wrapper-border {
     text-align: center;
-        overflow: hidden;
-        display: block;
-        border-radius: 10px;
-        position: relative;
-        img {
-            width:100%; 
-            vertical-align: middle;       
-            border-style: none;        
-        }
+    overflow: hidden;
+    display: block;
+    border-radius: 10px;
+    position: relative;
+    img {
+        width:100%; 
+        vertical-align: middle;       
+        border-style: none;        
+    }
 }       
 
 .wrap-input {
     border: 2px solid $gray003;
     border-radius: 10px;
     position: relative;
+}
+
+.wrapper-footer {
+    @include grid;
 }
 
 /******************************* bouton *******************************/
@@ -229,13 +281,54 @@ p, .calendrier {
 
 .btn-calendar {
     position: absolute;
-    right: 0px;
+    right: 15px;
     top:50%;
     transform: translateY(-50%);
 }
 
 .btn-black {
     border-radius: 10px;
+    @include flex-center;
+}
+
+.btn-black2 {
+    border-radius: 10px;
+    @include flex-center;
+}
+
+/******************************* formulaire + input *******************************/@at-root
+
+.formulaire {
+    grid-template-columns: 1fr 1fr;
+    @include grid;
+    gap:25px;
+}
+
+.formulaire2 {
+    grid-template-columns: 1fr 1fr 1fr;
+    @include grid;
+    width:870px;
+    gap:25px;
+    .message {
+        grid-column: 1 / span 3;
+    }
+}
+
+.form-txt {
+    margin-left: 3px;
+    padding-bottom: 10px;
+}
+.calendrier {
+    border-radius: 10px;
+    border: none!important; 
+    outline: none!important;
+    overflow: visible;
+    width:100%;
+    height:100%;
+    padding: 16px 15px;
+}
+.calendrier:focus {
+    box-shadow: 0 0 0px 2px $red;
 }
 
 /******************************* margin/padding *******************************/
@@ -250,6 +343,14 @@ p, .calendrier {
     padding:0 10px;
 }
 
+.p-t-5 {
+    padding-top: 5px;
+}
+
+.p-t-22 {
+    padding-top: 22px;
+}
+
 .p-t-30 {
     padding-top: 30px;
 }
@@ -262,13 +363,24 @@ p, .calendrier {
     padding-top: 40px;
 }
 
-
 .p-t-45 {
     padding-top: 45px;
 }
 
 .p-t-50 {
     padding-top: 50px;
+}
+
+.p-t-85 {
+    padding-top: 85px;
+}
+
+.p-t-90 {
+    padding-top: 135px;
+}
+
+.p-t-105 {
+    padding-top: 105px;
 }
 
 .p-t-115 {
@@ -283,13 +395,53 @@ p, .calendrier {
     padding-top: 135px;
 }
 
+.p-t-225 {
+    padding-top: 225px;
+}
+
+.p-b-5 {
+    padding-bottom: 5px;
+}
+
+.p-b-10 {
+    padding-bottom: 10px;
+}
+
+.p-b-22 {
+    padding-bottom: 22px;
+}
+
+.p-b-24 {
+    padding-bottom: 24px;
+}
+
 .p-b-30 {
     padding-bottom:30px;
 } 
 
+.p-b-40 {
+    padding-bottom: 40px;
+}
+
+.p-b-62 {
+    padding-bottom:62px;
+} 
+
+.p-b-70 {
+    padding-bottom:70px;
+} 
+
+.p-b-85 {
+    padding-bottom: 85px;
+}
+
 .p-b-105 {
     padding-bottom:105px;
 } 
+
+.p-b-113 {
+    padding-bottom: 113px;
+}
 
 .p-b-120 {
     padding-bottom: 120px;
@@ -299,9 +451,29 @@ p, .calendrier {
     padding-bottom: 158px;
 } 
 
+.p-b-170 {
+    padding-bottom: 170px;
+}
+
 .p-b-208 {
     padding-bottom: 158px;
 } 
+
+.p-b-250 {
+    padding-bottom: 250px;
+}
+
+.p-l-1 {
+    padding-left: 1px;
+}
+
+.p-r-10 {
+    padding-right: 10px;
+}
+
+.p-r-40 {
+    padding-right: 40px;
+}
 
 /* margin */ 
 
@@ -317,35 +489,77 @@ p, .calendrier {
     margin-bottom: 13px;
 }
 
+.m-b-14 {
+    margin-bottom: 14px;
+}
+
+.m-b-18 {
+    margin-bottom: 18px;
+}
+
 .m-b-20 {
     margin-bottom: 20px;
+}
+
+.m-b-25 {
+    margin-bottom: 25px;
 }
 
 .m-b-30 {
     margin-bottom: 30px;
 }
 
+.m-b-33 {
+    margin-bottom: 33px;
+}
+
 .m-b-52 {
     margin-bottom: 52px;
+}
+
+.m-b-158 {
+    margin-bottom: 158px;
 }
 
 .m-t-5 {
     margin-top: 5px;
 }
 
+.m-t-13 {
+    margin-top: 13px;
+}
+
 .m-t-10 {
     margin-top: 10px;
+}
+
+.m-t-12 {
+    margin-top: 12px;
 }
 
 .m-t-30 {
     margin-top: 30px;
 }
 
+.m-t-32 {
+    margin-top: 32px;
+}
+
 .m-t-40 {
     margin-top: 40px;
 }
 
+.m-t-43 {
+    margin-top: 43px;
+}
+
+
 /********************************** size *********************************/
+
+.sizefull {
+    width:100%;
+    height:100%;
+}
 
 .size1 {
     width:173px;
@@ -381,6 +595,42 @@ p, .calendrier {
     height:40px;
 }
 
+.size8 {
+    width: 118px;
+    height:118px;
+}
+
+.size9 {
+    max-width: 890px;
+}
+
+.size10 {
+    width:270px;
+    height:50px;
+}
+
+.size11 {
+    width:70px;
+    height:70px;
+}
+
+.size12 {
+    width:160px;
+    height:40px;
+}
+
+.size13 {
+    width: 100%;
+    height: 150px;
+}
+
+.size14 {
+    height:400px;
+}
+
+.size15 {
+    width:190px;
+}
 
 /******************************* transition *******************************/
 

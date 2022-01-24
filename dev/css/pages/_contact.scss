@@ -1,0 +1,70 @@
+.contact-page {
+    header {
+        background: url(../img//bg-title-page-02.jpg) center/cover;
+    }
+    .header-int {
+        height: 545px;
+    }
+    .map-contact {
+        background-image: url(../img/pattern1.png);
+        background-repeat: repeat;
+        @include flex-center;      
+        .container { 
+            flex-direction: column;
+            .la-map {
+                border-radius: 10px;
+                border: 5px solid white;
+                position: relative;
+                overflow: hidden;
+                width: 870px;
+                iframe {
+                    height:100%;
+                    width:100%;
+                    opacity: 0.5;
+                }
+                .bg-overlay {
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0,0,0,0.5);
+                }
+                .logo2 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    img {
+                        height: 100%;
+                    }
+                }
+                .mapouter{
+                    position:relative;
+                    text-align:right;
+                    height:100%;
+                    width:100%;
+                }
+                .gmap_canvas {
+                    overflow:hidden;
+                    background:none!important;
+                    height:100%;
+                    width:100%;
+                }
+            }
+            .info-map {
+                @include flex-center;   
+                width:1200px;  
+                align-items: flex-start;
+                .info-mapping {
+                    @include grid;
+                    align-items: start;
+                    grid-template-columns: 55px 1fr;
+                    i {
+                        grid-row : 1 / span 2;
+                    }
+                }
+            }
+            .info-map > * {
+                width:100%;
+            }
+        }
+    }
+}
