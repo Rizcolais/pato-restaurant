@@ -6,11 +6,20 @@
         background-image: url(../img/pattern1.png);
         background-repeat: repeat;
         @include flex-center;
+        .container {
+            @include responsive2 {
+                flex-direction: column
+            };
+        }
         .italian {
             width:50%;
             padding: 0 30px;
             text-align: center;
             position: relative;
+            @include responsive2 {
+                width: 100%;
+                padding:0px;
+            };
             .btn-black {
                 position: absolute;
                 bottom:-90px;
@@ -21,10 +30,16 @@
         .image {
             width:50%;
             justify-content: center;
-            display: flex;     
+            display: flex;  
+            @include responsive2 {
+                width:60%;
+            }   
         }
         .image > * {
             width: 65%;
+            @include responsive2 {
+                width: 100%;
+            };
         }
     }
     .discover {
@@ -44,6 +59,17 @@
         }
         .les-articles {
             @include flex-center;
+            align-items: flex-start;
+            @include responsive2 {
+                flex-direction: column;
+            };
+            .time-blog {
+                position: absolute;
+                bottom:11Px;
+                left:14px;
+                padding: 3px 15px;
+                border-radius: 4px;
+            }
         }
         .les-articles > * {
             padding: 30px 15px 0 15px;
@@ -57,6 +83,10 @@
         .container-grid {
             grid-template-columns: 1fr 1fr 1fr;
             gap: 30px;
+            @include responsive3 {
+                grid-template-columns: 1fr 1fr;
+                padding: 0 30px;
+            };
             .wrapper-border:nth-of-type(1) {
                 grid-row: 1 / span 2;
             }
@@ -66,14 +96,18 @@
             }
             .wrapper-border:nth-of-type(3) {
                 grid-column: 1 / span 2;
-                grid-row: 3 / span 1;
-                
+                grid-row: 3 / span 1; 
+            }
+            .wrapper-border:nth-of-type(4), .wrapper-border:nth-of-type(5), .wrapper-border:nth-of-type(6) {
+                @include responsive3 {
+                    grid-column: 1 / span 2;
+                };
             }
         }
     }
     .upcomming-event {
         background-image: url(../img/bg-event-01.jpg);
-        width:1920px;
+        max-width:1920px;
         position: relative;
         left:0px;
         top:0px;
@@ -84,15 +118,42 @@
             position: relative;
             border-radius: 10px;
             @include flex-center;
+            align-items: flex-start;
+            @include responsive2-5 {
+                flex-direction: column;
+                align-items: center;
+            };
             .block-left {
                 position: relative;
                 height:400px;
+                @include responsive2-5 {
+                    height:100%;
+                };
                 .bg-event {
                     width:100%;
                     position: relative;
                     .wrapper-border {
                         width:100%;
                         border-radius: 10px 0 0 10px;
+                        position: relative;
+                        @include responsive2-5 {
+                            border-radius: 10px 10px 0 0;
+                        };
+                        img {
+                            height:400px;
+                            width:auto;
+                            position: relative;
+                            left: 50%;
+                            top: 0%;
+                            transform: translate(-50%, 0%);
+                            @include responsive2-5 {
+                                left: 0%;
+                                top:0%;
+                                transform: none;
+                                width:100%;
+                                height:100%;
+                            };
+                        }
                         a {
                             position: relative;
                             width:100%;
@@ -105,6 +166,10 @@
                                 left: 0%;
                                 transform: translate(-46%, -50%) rotateZ(
                                 90deg);
+                                @include responsive2-5 {
+                                    transform: none;
+                                    
+                                };
                                 span {
                                     top: 50%;
                                     transform: translate(-0%, 35%);
@@ -124,6 +189,9 @@
                         padding: 45px 40px 30px 40px;
                         @include flex-center;
                         flex-direction: column;
+                        @include responsive2-5 {
+                            border-radius: 0 0 10px 10px;
+                        };
                         .decompte {
                             @include flex-center;
                             width:100%;
@@ -139,6 +207,9 @@
         }
         .block-events > * {
             width: 50%;
+            @include responsive2-5 {
+                width:95%;
+            };
         }
     }
     .review {

@@ -3,15 +3,20 @@
     flex-direction: column;
     .footer1 {
         @include flex-center;
-        width: 1200px;
+        max-width: 1200px;
+        padding: 0 15px;
         .wrapper-footer > * {
-            height:100%;
+            height:auto;
         }
         .wrapper-footer {
             width: 100%;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             align-items: start;
+            @include responsive2-5 {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto auto 1fr;
+            };
             .opening-time {
                 grid-row: 2 / span 1;
             }
@@ -22,6 +27,11 @@
             .Gallery {
                 grid-column: 3;
                 grid-row: 1 / span 2;
+                @include responsive2-5 {
+                    grid-column: 1;
+                    grid-row: 3;
+                    padding-top: 50px;
+                };
                 .les-images {
                     @include grid;
                     grid-template-columns: 1fr 1fr 1fr 1fr; 
@@ -39,10 +49,23 @@
     .footer2 {
         @include flex-center;
         width:100%;
-        .foot-icone {
-            @include flex-center;
-            width:1200px;
-            justify-content: space-between;
+        padding: 0 15px;
+        .container { 
+            width:100%;
+            .foot-icone > * {
+                width:auto;
+            }
+            .foot-icone {
+                width:100%;
+                @include flex-center;
+                justify-content: space-between;
+                @include responsive1 {
+                    flex-wrap: wrap;
+                }
+                a:nth-of-type(1) {
+                        padding-left:0;
+                }
+            }
         }
     }
 }

@@ -5,11 +5,13 @@
 @import "helpers/mixins";
 
 @import "components/buttons";
+@import "components/padmarg";
 
 @import "layout/general";
 @import "layout/header";
 @import "layout/footer";
 @import "layout/navigation";
 
+@import "pages/blog";
 @import "pages/contact";
 @import "pages/home";

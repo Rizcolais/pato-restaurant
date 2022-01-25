@@ -1,0 +1,38 @@
+.blog-page {
+    header {
+        background: url(../img/bg-title-page-03.jpg) center/cover;
+    }
+    .header-int {
+        height: 545px;
+    }
+    .separator-gray {
+        border-bottom: 1px solid $gray004;
+        .container {
+            justify-content: flex-start;
+            margin: 0 67px;
+        }
+    }
+    .blog-articles {
+        .container {
+            margin: 0 67px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .colonne-left {
+                width:900px;
+                border-right: 1px solid $gray004;
+                .all-articles {
+                    .article1 {
+                        .block-image {
+                            position: relative;
+                            img {
+                                width:100%;
+                                border-radius: 10px;
+                                position: relative;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

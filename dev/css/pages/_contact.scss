@@ -11,12 +11,13 @@
         @include flex-center;      
         .container { 
             flex-direction: column;
+            width:100%;
             .la-map {
                 border-radius: 10px;
                 border: 5px solid white;
                 position: relative;
                 overflow: hidden;
-                width: 870px;
+                width: 100%;
                 iframe {
                     height:100%;
                     width:100%;
@@ -51,12 +52,23 @@
             }
             .info-map {
                 @include flex-center;   
-                width:1200px;  
+                max-width:1200px;  
+                width:100%;
                 align-items: flex-start;
+                @include responsive2 {
+                    flex-direction: column;
+                    max-width: 1200px;
+                    width:100%;
+                };
                 .info-mapping {
                     @include grid;
                     align-items: start;
-                    grid-template-columns: 55px 1fr;
+                    grid-template-columns: 55px auto;
+                    @include responsive2 {
+                        padding-left: 115px;
+                        padding-right: 30px;
+                        justify-content: flex-start;
+                    };
                     i {
                         grid-row : 1 / span 2;
                     }

@@ -6,8 +6,47 @@
     justify-content: center;
 }
 
+// grid center / center 
+
 @mixin grid {
     display: grid;
     align-items: center;
     justify-content: center;
+}
+
+// responsive 
+
+$smartphone: 320px;
+$Iphone: 414px;
+$Netbook: 480px;
+$miniblette: 576px;
+$idkwhattoinvent: 690px;
+$between: 768px;
+$tabmoyenne: 800px;
+$betweentab: 992px;
+$tablettes: 1024px;
+$macbook: 1280px;
+
+@mixin responsive1 {
+    @media (max-width: $idkwhattoinvent) {
+        @content;
+    }
+}
+
+@mixin responsive2 {
+    @media (max-width: $between) {
+        @content;
+    }
+}
+
+@mixin responsive2-5 {
+    @media (max-width: $betweentab) {
+        @content;
+    }
+}
+
+@mixin responsive3 {
+    @media (max-width: $macbook) {
+        @content;
+    }
 }
