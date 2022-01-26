@@ -48,3 +48,41 @@
     @include flex-center;
     flex-direction: column;
 }
+
+.btn-search {
+    border:none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    i {
+        transform: rotate(90deg);
+        cursor: pointer;
+    }
+}
+
+.btn-menu {
+    outline: none!important;
+    border:none;
+    background:transparent;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.btn-menu:hover {
+    border-top: 2px solid $red;
+    border-bottom: 2px solid $red;
+}
+
+.btn-close-sidebar {
+    outline: none!important;
+    border:none;
+    background:transparent;
+    position: absolute;
+    font-size: 20px;
+    padding: 10px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+

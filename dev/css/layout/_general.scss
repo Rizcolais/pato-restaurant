@@ -9,13 +9,20 @@ a {
     font-weight: 400;
 }
 
-.small-date, .time-blog, .date-blog {
+.btn-white a, .btn-black a {
+    line-height: 1.1;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.small-date, .time-blog, .date-blog, .barre-search {
     font-family: $montserrat;
     font-size: 12px;
     font-weight: 400;
 }
 
-.Marie-NY, .btn-black2, .home-click {
+.Marie-NY, .btn-black2, .home-click, .number-articles {
     font-family: $montserrat;
     font-size: 12px;
     font-weight: 400;
@@ -24,14 +31,17 @@ a {
     line-height: 1.1;
 }
 
-.btn-white a, .btn-black a {
-    line-height: 1.1;
+.title-popular {
+    font-family: $poppins;
+    font-weight: 500;
     font-size: 12px;
-    text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5;
 }
 
-.click-gray, .wrapper-txt a, .continue-blog a {
+.click-gray, .wrapper-txt a, .continue-blog a, .liste-cat a {
     font-family: $montserrat;
     line-height: 1.5;
     font-weight: 400;
@@ -55,7 +65,7 @@ a {
     text-transform: uppercase;
 }
 
-.text-inside, .text-inside a, .text-mapping {
+.text-inside, .text-inside a, .text-mapping, .date-popular {
     font-family: $montserrat;
     font-weight: 400;
     font-size: 13px;
@@ -67,6 +77,14 @@ a {
     font-family: $montserrat;
     font-size: 14px;
     font-weight: 400;
+}
+
+.sidebar .navigation a {
+    font-family: $montserrat;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .text-foot {
@@ -102,15 +120,15 @@ p {
     line-height: 1.7;
 }
 
-.title-footer {
+.title-footer, .title-gallery {
     font-family: $poppins;
     font-weight: 500;
     font-size: 18px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
-h6, .title7, .title-contact, .title-map-info {
+h6, .title7, .title-contact, .title-map-info, .title-cat-blog {
     font-family: $poppins;
     font-weight: 500;
     font-size: 22px;
@@ -204,11 +222,11 @@ h2 {
 
 /* color */
 
-.nav-bar a, .btn-white, .btn-white:hover a, .btn-2:hover h6, .txt-verticale, h5, .txt-verticale span, h1, h2, .btn-black a, .btn-black2 a, .foot-icone a, .title-footer, .time-blog, .jour-blog, .date-blog {
+.nav-bar a, .btn-white, .btn-white:hover a, .btn-2:hover h6, .txt-verticale, h5, .txt-verticale span, h1, h2, .btn-black a, .btn-black2 a, .foot-icone a, .title-footer, .time-blog, .jour-blog, .date-blog, .fa-search, aside a {
     color:white;
 }
 
-.story, .wrapper-txt a, h4, .title7, .Marie-NY, .title-blog, .home-click, .continue-blog a {
+.story, .wrapper-txt a, h4, .title7, .Marie-NY, .title-blog, .home-click, .continue-blog a, .title-cat-blog, .liste-cat a, .title-popular, .sidebar .navigation a, .title-gallery {
     color: $black001;
 }
 
@@ -216,11 +234,15 @@ h6, .title-map-info {
     color: $black002;
 }
 
-p, .calendrier, .text-avis, .btn-calendar, .text-mapping {
+.btn-close-sidebar {
+    color: $black003;
+}
+
+p, .calendrier, .text-avis, .btn-calendar, .text-mapping, .barre-search {
     color: $gray;
 }
 
-.mots, .bg-event .wrapper-border a, .text-foot, .text-inside, .click-gray {
+.mots, .bg-event .wrapper-border a, .text-foot, .text-inside, .click-gray, .date-popular, .number-articles {
     color: $gray001;
 }
 
@@ -232,13 +254,13 @@ p, .calendrier, .text-avis, .btn-calendar, .text-mapping {
     color: $gray005;
 }
 
-.nav-bar a:hover, .story:hover, a h6:hover, .wrapper-txt a:hover, .bg-event .wrapper-border a:hover, .btn-white a, h3, .les-etoiles, .foot-icone a:hover, .text-inside a, .title-blog:hover, .home-click:hover, .continue-blog a:hover, .number {
+.nav-bar a:hover, .story:hover, a h6:hover, .wrapper-txt a:hover, .bg-event .wrapper-border a:hover, .btn-white a, h3, .les-etoiles, .foot-icone a:hover, .text-inside a, .title-blog:hover, .home-click:hover, .continue-blog a:hover, .number, .fa-search:hover, .title-popular:hover, .liste-cat a:hover, .sidebar .navigation a:hover, .btn-close-sidebar:hover {
     color:$red;
 }
 
 /* background color */ 
 
-.btn-2, .learn-more, .block-events .block-right .bg-event .wrapper-border, .btn-white, .play {
+.btn-2, .learn-more, .block-events .block-right .bg-event .wrapper-border, .btn-white, .play, aside {
     background-color: white;
 } 
 
@@ -250,7 +272,7 @@ p, .calendrier, .text-avis, .btn-calendar, .text-mapping {
     background-color: $black001;
 }
 
-.footer {
+.footer, .btn-search {
     background-color: $black002;
 }
 
@@ -447,6 +469,21 @@ p, .calendrier, .text-avis, .btn-calendar, .text-mapping {
     height:82px;
 }
 
+.size17 {
+    width:46px;
+    height:46px;
+}
+
+.size18 {
+    width:70px;
+    height:70px;
+}
+
+.size19 {
+    width:26px;
+    height:15px;
+}
+
 .widthfull {
     width:100%;
 }
@@ -455,4 +492,15 @@ p, .calendrier, .text-avis, .btn-calendar, .text-mapping {
 
 .transition {
     transition: all 0.5s ease-out;
+}
+
+.transition1 {
+    transition: all 0.4s;
+}
+
+/******************************* overlay *******************************/
+
+.bg-overlay {
+    visibility: visible;
+    background-color: rgba(0,0,0,0.65);
 }
